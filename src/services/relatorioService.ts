@@ -5,7 +5,7 @@ const API_BASE_URL = "http://localhost:8080/relatorio"; //poderia ser um .env po
 
 export const fetchTop5 = async (): Promise<Empreendimento[]> => {
     try {
-        const response = await axios.get(`${API_BASE_URL}/top5`);
+        const response = await axios.get(`${API_BASE_URL}/maiores-geradores?page=0&size=25`);
         return response.data;
     } catch (error) {
         console.error("Erro ao buscar top 5", error);

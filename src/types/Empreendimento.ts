@@ -3,7 +3,7 @@ export interface Empreendimento {
     createdAt: string;
     datGeracaoConjuntoDados: string;
     datRalie: string;
-    ideNucleoCEG: string;
+    ideNucleoCEG: number;
     codCEG: string;
     sigUFPrincipal: string;
     dscOrigemCombustivel: string;
